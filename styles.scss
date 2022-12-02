@@ -95,14 +95,54 @@ main {
             font-size: 1.5rem;
           }
 
-          img {
+          .image {
+            display: flex;
+            flex-direction: column;
             width: 20%;
+            position: relative;
             border-radius: 0.4rem;
-            margin-right: 2rem;
+            overflow: hidden;
+
+            a {
+              background: $blue;
+              //background: #6e5494;
+              width: 100%;
+              z-index: -1;
+              opacity: 0;
+              position: absolute;
+              bottom: 0;
+              text-align: center;
+              padding: 0.3rem;
+              text-decoration: none;
+              font-weight: 600;
+            }
+
+            img {
+              display: block;
+
+              &.change {
+                width: 100%;
+                opacity: 0;
+                z-index: -1;
+                position: absolute;
+              }
+            }
 
             &:hover {
-              transform: scale(1.05);
+              a {
+                z-index: 1000;
+                opacity: 1;
+              }
+
+              img.change {
+                opacity: 1;
+                z-index: 1000;
+              }
             }
+          }
+
+          .description {
+            margin-left: 2rem;
           }
         }
       }
