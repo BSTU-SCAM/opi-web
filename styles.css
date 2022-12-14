@@ -21,6 +21,7 @@ html,
 body {
   height: 100%;
   background: #111;
+  scroll-behavior: smooth;
 }
 
 body {
