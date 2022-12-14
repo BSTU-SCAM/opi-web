@@ -3,6 +3,7 @@
 $gray: #111;
 $darkgray: #1a1a1a;
 $blue: #008cff;
+$darkblue: #0066cc;
 
 * {
   margin: 0;
@@ -82,7 +83,7 @@ main {
   section {
     margin: 6rem 0;
     width: 65%;
-    border-bottom: 1px solid rgba(0, 140, 255, 0.53);
+    border-bottom: 1px solid $darkblue;
     padding-bottom: 6rem;
 
     &:last-child {
@@ -93,6 +94,40 @@ main {
     &#goal {
       p {
         margin-top: 1rem;
+      }
+    }
+
+    &#deadlines {
+      ul {
+        list-style: none;
+        margin-top: 1rem;
+
+        li {
+          margin-bottom: 1rem;
+
+          &.version {
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+            border-bottom: 1px dashed $darkblue;
+          }
+
+          span {
+            font-family: 'Lucida Console', Monaco, monospace;
+            background: $darkgray;
+            border-radius: 0.4rem;
+            padding: 0.3rem;
+          }
+
+          a {
+            text-decoration: none;
+            color: $blue;
+            
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
       }
     }
 
@@ -159,6 +194,26 @@ main {
         }
       }
     }
+
+    &#modules {
+      ul {
+        list-style-type: ' - ';
+        padding-left: 20px;
+        margin: 1rem 0;
+
+        li {
+          margin-bottom: 0.3rem;
+          font-size: 17px;
+
+          span {
+            font-family: 'Lucida Console', Monaco, monospace;
+            background: $darkgray;
+            border-radius: 0.4rem;
+            padding: 0.3rem;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -182,7 +237,4 @@ footer {
       opacity: 0.5;
     }
   }
-}
-
-@media screen and (max-width: 500px) {
 }

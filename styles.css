@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +32,6 @@ h2 {
   font-weight: 500;
   color: #008cff;
 }
-
 h2.main {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -47,15 +45,12 @@ header {
   background: #1a1a1a;
   border-bottom: 1px solid #008cff;
 }
-
 header h1 {
   padding-left: 1rem;
 }
-
 header nav {
   display: flex;
 }
-
 header nav a {
   display: inline-flex;
   align-items: center;
@@ -63,7 +58,6 @@ header nav a {
   height: 4rem;
   text-decoration: none;
 }
-
 header nav a:hover {
   background: #333;
   color: #008cff;
@@ -75,33 +69,52 @@ main {
   justify-content: center;
   align-items: center;
 }
-
 main section {
   margin: 6rem 0;
   width: 65%;
-  border-bottom: 1px solid rgba(0, 140, 255, 0.53);
+  border-bottom: 1px solid #0066cc;
   padding-bottom: 6rem;
 }
-
 main section:last-child {
   border-bottom: none;
   margin-bottom: 0;
 }
-
 main section#goal p {
   margin-top: 1rem;
 }
-
+main section#deadlines ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+main section#deadlines ul li {
+  margin-bottom: 1rem;
+}
+main section#deadlines ul li.version {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  border-bottom: 1px dashed #0066cc;
+}
+main section#deadlines ul li span {
+  font-family: "Lucida Console", Monaco, monospace;
+  background: #1a1a1a;
+  border-radius: 0.4rem;
+  padding: 0.3rem;
+}
+main section#deadlines ul li a {
+  text-decoration: none;
+  color: #008cff;
+}
+main section#deadlines ul li a:hover {
+  text-decoration: underline;
+}
 main section#team .container .person {
   display: flex;
   margin-top: 1rem;
 }
-
 main section#team .container .person h3 {
   font-weight: 500;
   font-size: 1.5rem;
 }
-
 main section#team .container .person .image {
   display: flex;
   flex-direction: column;
@@ -110,7 +123,6 @@ main section#team .container .person .image {
   border-radius: 0.4rem;
   overflow: hidden;
 }
-
 main section#team .container .person .image a {
   background: #008cff;
   width: 100%;
@@ -123,30 +135,40 @@ main section#team .container .person .image a {
   text-decoration: none;
   font-weight: 600;
 }
-
 main section#team .container .person .image img {
   display: block;
 }
-
 main section#team .container .person .image img.change {
   width: 100%;
   opacity: 0;
   z-index: -1;
   position: absolute;
 }
-
 main section#team .container .person .image:hover a {
   z-index: 1000;
   opacity: 1;
 }
-
 main section#team .container .person .image:hover img.change {
   opacity: 1;
   z-index: 1000;
 }
-
 main section#team .container .person .description {
   margin-left: 2rem;
+}
+main section#modules ul {
+  list-style-type: " - ";
+  padding-left: 20px;
+  margin: 1rem 0;
+}
+main section#modules ul li {
+  margin-bottom: 0.3rem;
+  font-size: 17px;
+}
+main section#modules ul li span {
+  font-family: "Lucida Console", Monaco, monospace;
+  background: #1a1a1a;
+  border-radius: 0.4rem;
+  padding: 0.3rem;
 }
 
 footer {
@@ -160,13 +182,11 @@ footer {
   align-self: flex-end;
   padding: 1rem;
 }
-
 footer a {
   text-decoration: none;
   color: #008cff;
   margin-left: 0.5rem;
 }
-
 footer a:hover {
   opacity: 0.5;
 }
