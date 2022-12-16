@@ -82,15 +82,20 @@ main {
   align-items: center;
 
   section {
-    margin: 6rem 0;
+    margin-bottom: 6rem;
     width: 65%;
     border-bottom: 1px solid $darkblue;
     padding-bottom: 6rem;
+
+    &:first-child {
+      margin-top: 6rem;
+    }
 
     &:last-child {
       border-bottom: none;
       margin-bottom: 0;
     }
+
 
     &#goal {
       p {
@@ -218,6 +223,17 @@ main {
             border-radius: 0.4rem;
             padding: 0.3rem;
           }
+        }
+      }
+    }
+
+    &#diagram, &#documentation {
+      a {
+        text-decoration: none;
+        color: $blue;
+
+        &:hover {
+          opacity: 0.5;
         }
       }
     }

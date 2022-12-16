@@ -71,10 +71,13 @@ main {
   align-items: center;
 }
 main section {
-  margin: 6rem 0;
+  margin-bottom: 6rem;
   width: 65%;
   border-bottom: 1px solid #0066cc;
   padding-bottom: 6rem;
+}
+main section:first-child {
+  margin-top: 6rem;
 }
 main section:last-child {
   border-bottom: none;
@@ -178,6 +181,13 @@ main section#modules ul li span {
   background: #1a1a1a;
   border-radius: 0.4rem;
   padding: 0.3rem;
+}
+main section#diagram a, main section#documentation a {
+  text-decoration: none;
+  color: #008cff;
+}
+main section#diagram a:hover, main section#documentation a:hover {
+  opacity: 0.5;
 }
 
 footer {
