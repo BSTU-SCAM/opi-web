@@ -237,6 +237,35 @@ main {
         }
       }
     }
+
+    &#story {
+      display: flex;
+      flex-direction: column;
+
+      table {
+        flex: 1;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $darkblue;
+
+        th {
+          background: $darkgray;
+          padding: 0.6rem;
+          text-align: left;
+        }
+
+        td {
+          padding: 0.6rem;
+          border-bottom: 1px solid $darkblue;
+
+          &:first-child {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
   }
 }
 

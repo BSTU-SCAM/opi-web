@@ -189,6 +189,30 @@ main section#diagram a, main section#documentation a {
 main section#diagram a:hover, main section#documentation a:hover {
   opacity: 0.5;
 }
+main section#story {
+  display: flex;
+  flex-direction: column;
+}
+main section#story table {
+  flex: 1;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #0066cc;
+}
+main section#story table th {
+  background: #1a1a1a;
+  padding: 0.6rem;
+  text-align: left;
+}
+main section#story table td {
+  padding: 0.6rem;
+  border-bottom: 1px solid #0066cc;
+}
+main section#story table td:first-child {
+  white-space: nowrap;
+}
 
 footer {
   display: flex;
